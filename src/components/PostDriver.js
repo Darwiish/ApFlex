@@ -56,11 +56,11 @@ class PostDriver extends Component {
 
   onSubmit = event => {
     event.preventDefault();
-    const URL_REGJOB = process.env.REACT_APP_API_REGISTERPROGRAM;
+    const URL_REGDRIVER = process.env.REACT_APP_API_REGISTERDRIVER;
     const a = this.state;
     axios({
       method: "post",
-      url: URL_REGJOB,
+      url: URL_REGDRIVER,
       data: JSON.stringify({
         driver_name: a.driver_name,
         driver_surname: a.driver_surname,
