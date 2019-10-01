@@ -45,8 +45,6 @@ class DriverPage extends Component {
             </div>
             <div className="col-lg-1" />
             <div className="col-lg-3" style={{ backgroundColor: "#fff" }}>
-              <h4>EfterNavne</h4>
-              <p className="driver_surname">{x.driver_surname}</p>
               <h4>Vogne</h4>
               <p className="driver_vehicle">{x.driver_vehicle}</p>
               <h4>Credit</h4>

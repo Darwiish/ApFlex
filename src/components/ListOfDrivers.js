@@ -5,7 +5,6 @@ import axios from "axios";
 const Drivers = props => (
   <tr>
     <td>{props.Drivers.driver_name}</td>
-    <td>{props.Drivers.driver_surname}</td>
     <td>{props.Drivers.driver_vehicle}</td>
     <td>{props.Drivers.credit}</td>
     <td>{props.Drivers.cash}</td>
@@ -53,8 +52,7 @@ class ListOFDrivers extends Component {
         <table className="table table-striped" style={{ marginTop: 20 }}>
           <thead>
             <tr>
-              <th>firstName</th>
-              <th>SurName</th>
+              <th>Name</th>
               <th>Vehicle</th>
               <th>Credit</th>
               <th>Cash</th>

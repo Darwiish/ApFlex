@@ -8,7 +8,6 @@ class PostDriver extends Component {
   constructor(props) {
     super(props);
     this.handleInputChange = this.handleInputChange.bind(this);
-    this.handleInputChangeSurName = this.handleInputChangeSurName.bind(this);
     this.handleInputVehicle = this.handleInputVehicle.bind(this);
     this.handleChangeCreatedDate = this.handleChangeCreatedDate.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
@@ -17,7 +16,6 @@ class PostDriver extends Component {
       message: "Loading...",
       auth: false,
       driver_name: "",
-      driver_surname: "",
       driver_vehicle: "",
       created_date: ""
     };
@@ -27,14 +25,6 @@ class PostDriver extends Component {
     const { value, name } = event.target;
     this.setState({
       [name]: value
-    });
-  };
-
-  // driver name drivge
-  handleInputChangeSurName = event => {
-    const { value, surname } = event.target;
-    this.setState({
-      [surname]: value
     });
   };
 
@@ -63,7 +53,6 @@ class PostDriver extends Component {
       url: URL_REGDRIVER,
       data: JSON.stringify({
         driver_name: a.driver_name,
-        driver_surname: a.driver_surname,
         driver_vehicle: a.driver_vehicle,
         created_date: new Date()
       }),
