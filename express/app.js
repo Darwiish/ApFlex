@@ -18,7 +18,7 @@ const path = require("path");
 
 app.use(express.static(path.join(__dirname, "../build")));
 
-let Driver = require("./DataAccess/DriverSchema.model");
+let Driver1 = require("./DataAccess/DriverSchema.model");
 let User = require("./DataAccess/UserSchema.model");
 
 app.use((req, res, next) => {

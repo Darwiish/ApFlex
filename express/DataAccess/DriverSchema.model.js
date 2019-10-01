@@ -6,10 +6,6 @@ let Driver = new Schema({
   driver_name: {
     type: String
   },
-  driver_surname: {
-    type: String
-  },
-
   driver_vehicle: {
     type: String
   },
